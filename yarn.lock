@@ -73,7 +73,7 @@ boom@4.x.x:
   dependencies:
     hoek "4.x.x"
 
-boom@5.x.x, boom@^5.2.0:
+boom@5.x.x, boom@^5.0.0, boom@^5.2.0:
   version "5.2.0"
   resolved "http://registry.npm.taobao.org/boom/download/boom-5.2.0.tgz#5dd9da6ee3a5f302077436290cb717d3f4a54e02"
   dependencies:
@@ -381,6 +381,14 @@ handlebars@^4.0.11:
   optionalDependencies:
     uglify-js "^3.1.4"
 
+hapi-pagination@1:
+  version "1.22.0"
+  resolved "http://registry.npm.taobao.org/hapi-pagination/download/hapi-pagination-1.22.0.tgz#0809ccd83fa05d6c09b61d01c9fd2a08afeb3265"
+  dependencies:
+    boom "^5.0.0"
+    hoek "^4.0.2"
+    joi "^10.2.1"
+
 hapi-swagger@7:
   version "7.10.0"
   resolved "http://registry.npm.taobao.org/hapi-swagger/download/hapi-swagger-7.10.0.tgz#acdc53d4064f7acee39a9c8c8105c5a6cc4f953f"
@@ -426,7 +434,7 @@ heavy@4.x.x:
     hoek "4.x.x"
     joi "10.x.x"
 
-hoek@4.x.x, hoek@^4.2.0:
+hoek@4.x.x, hoek@^4.0.2, hoek@^4.2.0:
   version "4.2.1"
   resolved "http://registry.npm.taobao.org/hoek/download/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
 
@@ -534,7 +542,7 @@ items@2.x.x:
   version "2.1.2"
   resolved "http://registry.npm.taobao.org/items/download/items-2.1.2.tgz#0849354595805d586dac98e7e6e85556ea838558"
 
-joi@10.x.x:
+joi@10.x.x, joi@^10.2.1:
   version "10.6.0"
   resolved "http://registry.npm.taobao.org/joi/download/joi-10.6.0.tgz#52587f02d52b8b75cdb0c74f0b164a191a0e1fc2"
   dependencies:

@@ -4,6 +4,7 @@ require('env2')('./.env')
 const config = require('./config');
 const routesHelloHapi = require('./routes/hello-hapi');
 const pluginHapiSwagger = require('./plugins/hapi-swagger');
+const pluginHapiPagination = require('./plugins/hapi-pagination');
 
 const server = new Hapi.Server();
 // 配置服务器启动 host 与端口
@@ -14,7 +15,8 @@ server.connection({
 
 const init = async () => {
   await server.register([
-    ...pluginHapiSwagger
+    ...pluginHapiSwagger,
+    pluginHapiPagination
   ]);
   server.route([
     // 创建一个简单的 hello hapi 接口
