@@ -1,3 +1,5 @@
+const Joi = require('joi');
+
 // utils/router-helper.js
 const paginationDefine = {
   limit: Joi.number().integer().min(1).default(10)

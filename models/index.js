@@ -1,19 +1,12 @@
 'use strict';
 
-if (process.env.NODE_ENV === 'production') {
-  require('env2')('./.env.prod');
-} else {
-  require('env2')('./.env');
-}
-
-const {
-  env
-} = process;
-
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
+const configs = require('../config/config.js');
+
 const basename = path.basename(__filename);
+const env = process.env.NODE_ENV || 'development';
 const config = {
   ...configs[env],
   define: {

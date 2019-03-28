@@ -3,6 +3,8 @@ const Hapi = require('hapi');
 require('env2')('./.env')
 const config = require('./config');
 const routesHelloHapi = require('./routes/hello-hapi');
+const routesShops = require('./routes/shops');
+const routesOrders = require('./routes/orders');
 const pluginHapiSwagger = require('./plugins/hapi-swagger');
 const pluginHapiPagination = require('./plugins/hapi-pagination');
 
@@ -21,6 +23,8 @@ const init = async () => {
   server.route([
     // 创建一个简单的 hello hapi 接口
     ...routesHelloHapi,
+    ...routesShops,
+    ...routesOrders
   ]);
   // 启动服务
   await server.start();
